@@ -5,11 +5,8 @@
 :: ======================================================================== ::
 @ECHO off
 SETLOCAL ENABLEDELAYEDEXPANSION
-::SET "sourcedir=C:\Users\Daniel\batch\GenFiles"
-::SET "destdir=C:\Users\Daniel\batch\GenFiles\vlm"
 SET sourcedir=%~dp0
 SET destdir=%sourcedir%vlm
-
 SET MAX=100
 FOR /f "delims=- tokens=1-3" %%a IN (
     'dir /b /a-d "%sourcedir%\vlm-*-*.*"'
